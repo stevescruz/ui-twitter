@@ -26,6 +26,8 @@ button {
 header#main-header {
   height: 54px;
   box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
+  position: relative;
+  z-index: 1;
 }
 
 header#main-header > div.wrapper {
@@ -72,7 +74,7 @@ header#main-header > div.wrapper > img {
   height: 32px;
 }
 
-header#main-header > div.wrapper > section#main-menu-right {
+header#main-header > div.wrapper > section.main-header-right-side {
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -80,11 +82,11 @@ header#main-header > div.wrapper > section#main-menu-right {
   /*margin-right: 97px;*/
 }
 
-header#main-header > div.wrapper > section#main-menu-right > div.searchBar {
+header#main-header > div.wrapper > section.main-header-right-side > div.searchBar {
   display: flex;
 }
 
-header#main-header > div.wrapper > section#main-menu-right > div.searchBar > div {
+header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > div {
   width: 40px;
   height: 40px;
   display: flex;
@@ -94,13 +96,13 @@ header#main-header > div.wrapper > section#main-menu-right > div.searchBar > div
   border-radius: 20px 0 0 20px;
 }
 
-header#main-header > div.wrapper > section#main-menu-right > div.searchBar > div > img {
+header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > div > img {
   width: 40px;
   height: 18.75px;
   padding-left: 10px;
 }
 
-header#main-header > div.wrapper > section#main-menu-right > div.searchBar > input {
+header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > input {
   width: 483.25px;
   height: 40px;
   display:flex;
@@ -114,19 +116,19 @@ header#main-header > div.wrapper > section#main-menu-right > div.searchBar > inp
   padding: 10px;
 }
 
-header#main-header > div.wrapper > section#main-menu-right > div.searchBar > input::placeholder {
+header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > input::placeholder {
   font-size: 15px;
   color: #fff;
 }
 
-header#main-header > div.wrapper > section#main-menu-right > img {
+header#main-header > div.wrapper > section.main-header-right-side > img {
   width: 34px;
   height: 34px;
   border-radius: 50%;
   margin: 0 16px 0 15px;
 }
 
-header#main-header > div.wrapper > section#main-menu-right > button {
+header#main-header > div.wrapper > section.main-header-right-side > button {
   width: 102px;
   height: 34px;
   
@@ -142,4 +144,14 @@ header#main-header > div.wrapper > section#main-menu-right > button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section.banner {
+  height: 380px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+section.banner > div.wrapper > a > img {
+  height: 380px;  
 }
