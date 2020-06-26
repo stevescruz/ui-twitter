@@ -17,6 +17,14 @@ button {
   outline: 0;
 }
 
+a {
+  color: #1da1f2;
+}
+
+a:active {
+  color: #1b95e0;
+}
+
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -25,7 +33,7 @@ button {
 
 header#main-header {
   height: 54px;
-  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
   position: relative;
   z-index: 1;
 }
@@ -39,7 +47,6 @@ header#main-header > div.wrapper {
 
 header#main-header > div.wrapper > nav  {
   width: 315px;
-  /*margin-left: 128px;*/
   margin-top: 3px;
 }
 
@@ -79,7 +86,6 @@ header#main-header > div.wrapper > section.main-header-right-side {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*margin-right: 97px;*/
 }
 
 header#main-header > div.wrapper > section.main-header-right-side > div.searchBar {
@@ -135,7 +141,7 @@ header#main-header > div.wrapper > section.main-header-right-side > button {
   border-style: none;
   border-radius: 16px;
   
-  background-color: #253341;
+  background-color: #1da1f2;
   
   font-size: 15px;
   font-weight: bold;
@@ -146,12 +152,248 @@ header#main-header > div.wrapper > section.main-header-right-side > button {
   align-items: center;
 }
 
-section.banner {
-  height: 380px;
+section.profile-banner {
+  height: 400px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+
+}
+
+section.profile-banner > div.wrapper {
+  height: 380px;
+  display: flex;
+  align-items: center;
+}
+
+section.profile-banner > div.wrapper > a {
+  height: 100%;
+}
+
+section.profile-banner > div.wrapper > a > img {
+  height: 100%; 
+}
+
+section.profile-details {
+  height: 60px;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.25);
+}
+
+section.profile-details > div.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 285; */
+  padding-left: 315px;
+}
+
+section.profile-details > div.wrapper > ul {
+  /* width: 496px; */
+  /* height: 48px; */
+  height: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+section.profile-details > div.wrapper > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 15px;
+
+  position: relative;
+}
+
+section.profile-details > div.wrapper > ul > li.active::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: #1da1f2;
+}
+
+section.profile-details > div.wrapper > ul > li > strong {
+  font-size: 12px;
+  color: #8899A6;
+}
+
+section.profile-details > div.wrapper > ul > li > p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 2px;
+}
+
+section.profile-details > div.wrapper > ul > li.active > p {
+  color: #1da1f2;
+}
+
+section.profile-details > div.wrapper > div {
+  width: 122px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+section.profile-details > div.wrapper > div > button {
+  width: 99px;
+
+  background-color: #15202B;
+  border: 1px solid #1da1f2;
+  border-radius: 16px;
+    
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.main-content {
+
+  margin-bottom: 100px;
+}
+
+sectionmain-content > div.wrapper {
+  display: flex;
+}
+
+section.main-content > div.wrapper > aside.profile {
+  width: 413px;
+  height: 639px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.main-content > div.wrapper > aside.profile > img {
+  width: 20px;
+  height: 20px;
+  /* width: 200px; */
+  /* height: 200px; */
+  border-radius: 50%;
+}
+
+section.main-content > div.wrapper > aside.profile > header > h1 {
+  font-size: 19px;
+  /* font-weight: bold; */
+  color: #fff;
+}
+
+section.main-content > div.wrapper > aside.profile > header > p {
+  font-size: 15px;
+  color: #8899A6;
+}
+
+section.main-content > div.wrapper > aside.profile > p {
+  width: 260px;
+  font-size: 15px;
+  color: #fff;
+}
+
+section.main-content > div.wrapper > aside.profile > ul {
+  list-style: none;
+}
+
+section.main-content > div.wrapper > aside.profile > ul > li {
+  font-size: 15px;
+  color: #8899A6;
+}
+
+section.main-content > div.wrapper > aside.profile > ul > li + li {
+  margin-top: 8px;
+}
+
+section.main-content > div.wrapper > aside.profile > ul > li > img {
+  margin-right: 5px;
+}
+
+section.main-content > div.wrapper > aside.profile > div.followers > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+section.main-content > div.wrapper > aside.profile > div.followers > div > img {
+  margin-right: 7px;
+}
+
+section.main-content > div.wrapper > aside.profile > div.followers > div > p {
+  font-size: 15px;
+  color: #1da1f2;
+}
+
+section.main-content > div.wrapper > aside.profile > div.followers > ul {
+  width: 260px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+section.main-content > div.wrapper > aside.profile > div.followers > ul > li {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #d0d5d9;
   margin-top: 5px;
 }
 
-section.banner > div.wrapper > a > img {
-  height: 380px;  
+section.main-content > div.wrapper > aside.profile > div.followers > ul > li:not(:nth-child(5n)) {
+  margin-right: 5px;
+}
+
+section.main-content > div.wrapper > aside.profile > div.media > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+section.main-content > div.wrapper > aside.profile > div.media > div > img {
+  margin-right: 5px;
+}
+
+section.main-content > div.wrapper > aside.profile > div.media > div > p {
+  font-size: 15px;
+  color: #1da1f2;
+}
+
+section.main-content > div.wrapper > aside.profile > div.media > ul {
+  width: 260px;
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+section.main-content > div.wrapper > aside.profile > div.media > ul > li {
+  width: 83px;
+  height: 83px;
+  background-color: #d0d5d9;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+section.main-content > div.wrapper > aside.profile > div.media > ul > li:not(:nth-child(3n)) {
+  margin-right: 5px;
+}
+
+section.main-content > div.wrapper > article.timeline {
+  width: 590px;
+}
+
+section.main-content > div.wrapper > aside.widgets {
+  width: 397px;
 }
