@@ -1,0 +1,207 @@
+section.main-content > article.timeline {
+  border: 1px solid #38444d;
+}
+
+section.main-content > article.timeline > nav {
+  height: 52px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #38444d;
+}
+
+section.main-content > article.timeline > nav > a{
+  width: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+  font-weight: bold;
+  color: #8899a6;
+  text-decoration: none;
+
+  padding: 15px;
+}
+
+section.main-content > article.timeline > nav > a:nth-child(2){
+  width: 40%;
+}
+
+section.main-content > article.timeline > nav > a:hover{
+  background-color: #162D40;
+}
+
+section.main-content > article.timeline > nav > a.active{
+  color: #1da1f2;
+  position: relative;
+}
+
+section.main-content > article.timeline > nav > a.active::after{
+  content: '';
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #1da1f2;
+  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+section.main-content > article.timeline > ul {
+  list-style: none;
+}
+
+section.main-content > article.timeline > ul > li {
+  border-bottom: 1px solid #38444d;
+}
+
+section.main-content > article.timeline > ul > li > a {
+  padding: 0 15px;
+  
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+}
+
+section.main-content > article.timeline > ul > li > a:hover {
+  background-color: #192734;
+}
+
+section.main-content > article.timeline > ul > li > a > div.retweet {
+  height: 31px;
+  padding: 10px 0 0;
+  
+  display: flex;
+}
+
+section.main-content > article.timeline > ul > li > a > div.retweet > div {
+  width: 49px;
+  height: 19px;
+  margin-right: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.retweet > div > img {
+  display: flex;
+  margin-left: auto;
+}
+
+section.main-content > article.timeline > ul > li > a > div.retweet > span {
+  font-size: 13px;
+  color: #8899a6;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet {
+  display: flex;
+
+  margin-top: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.avatar {
+  margin-right: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.avatar > img {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content {
+  width: 509px;
+
+  padding: 0 0 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > header > strong {
+  font-size: 15px;
+  color: #fff;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > header > span {
+  font-size: 15px;
+  color: #8899a6;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content >  p {
+  font-size: 15px;
+  color: #fff;
+
+  margin-top: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images {
+  width: 509px;
+  height: 297px;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images > img {
+  width: 250px;
+  height: 285px;
+  
+  padding: 2px;
+
+  border: 1px solid #38444d;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images > img:first-of-type {
+  border-radius: 20px 0 0 20px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images > img:last-of-type {
+  border-radius: 0 20px 20px 0;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images > img:only-of-type {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav {
+  height: 19px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div {
+  width: 25%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div:hover {
+
+  background-color: #193348;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div > p {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  color: #8899a6;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div > p > img {
+  margin-right: 11.5px;
+}

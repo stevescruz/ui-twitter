@@ -1,0 +1,121 @@
+section.main-content > aside.profile {
+  width: 265px;
+  /* height: 639px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin-right: 20px;
+}
+
+section.main-content > aside.profile > a {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: -178px;
+  position: relative;
+  z-index: 2;
+}
+section.main-content > aside.profile > a > img.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+section.main-content > aside.profile > header > h1 {
+  font-size: 19px;
+  color: #fff;
+  margin-top: 11px;
+}
+
+section.main-content > aside.profile > header > span {
+  font-size: 15px;
+  color: #8899A6;
+}
+
+section.main-content > aside.profile > header > p {
+  font-size: 15px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+section.main-content > aside.profile > ul {
+  list-style: none;
+  margin-top: 22px;
+}
+
+section.main-content > aside.profile > ul > li {
+  font-size: 15px;
+  color: #8899A6;
+}
+
+section.main-content > aside.profile > ul > li + li {
+  margin-top: 8px;
+}
+
+section.main-content > aside.profile > ul > li > img {
+  margin-right: 5px;
+}
+
+section.main-content > aside.profile > div.widget {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+section.main-content > aside.profile > div.widget > strong {
+  font-weight: normal;
+  font-size: 15px;
+  color: #1da1f2;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+section.main-content > aside.profile > div.widget > strong > img {
+  margin-right: 5px;
+}
+
+section.main-content > aside.profile > div.followers > nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+section.main-content > aside.profile > div.followers > nav > a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #d0d5d9;
+  margin-top: 5px;
+  margin-right: 5px;
+
+}
+
+section.main-content aside.profile > div.followers > nav > a > img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+section.main-content > aside.profile > div.media > nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+section.main-content > aside.profile > div.media > nav > a {
+  width: 83px;
+  height: 83px;
+  background-color: #d0d5d9;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+section.main-content > aside.profile > div.media > nav > a > img {
+  width: 83px;
+  height: 83px;
+  border-radius: 4px;
+}
