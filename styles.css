@@ -15,10 +15,16 @@ body {
 input, 
 button {
   outline: 0;
+  cursor: pointer;
 }
 
 a {
   color: #1da1f2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .wrapper {
@@ -57,7 +63,6 @@ header#main-header > div.wrapper > nav > ul > li {
   align-items: center;
   font-size: 13px;
   font-weight: bold;
-  color: #fff;
 }
 
 header#main-header > div.wrapper > nav > ul > li:nth-child(2) {
@@ -68,8 +73,23 @@ header#main-header > div.wrapper > nav > ul > li:nth-child(3) {
   margin-left: 25px;
 }
 
-header#main-header > div.wrapper > nav img {
+header#main-header > div.wrapper > nav > ul > li > a {
+  display: flex;
+  align-items: center;
+  
+  text-decoration: none;
+}
+
+header#main-header > div.wrapper > nav > ul > li > a:hover {
+  background-color: #162D40;
+}
+
+header#main-header > div.wrapper > nav > ul > li > a > img {
   margin-right: 7px;
+}
+
+header#main-header > div.wrapper > nav > ul > li > a > p {
+  color: #fff;
 }
 
 header#main-header > div.wrapper > img {
@@ -118,12 +138,16 @@ header#main-header > div.wrapper > section.main-header-right-side > div.searchBa
   padding: 10px;
 }
 
+/* input:active {
+  background-color: #15202B;
+} */
+
 header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > input::placeholder {
   font-size: 15px;
   color: #fff;
 }
 
-header#main-header > div.wrapper > section.main-header-right-side > img {
+header#main-header > div.wrapper > section.main-header-right-side > a > img {
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -148,13 +172,18 @@ header#main-header > div.wrapper > section.main-header-right-side > button {
   align-items: center;
 }
 
+header#main-header > div.wrapper > section.main-header-right-side > button:hover {
+  background-color: #1A91DA;
+}
+
 section.profile-banner {
   height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
-
+  position: relative;
+  z-index: 1;
 }
 
 section.profile-banner > div.wrapper {
@@ -193,13 +222,12 @@ section.profile-details > div.wrapper > ul {
 
 section.profile-details > div.wrapper > ul > li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-
-  padding: 0 15px;
-
   position: relative;
+}
+
+section.profile-details > div.wrapper > ul > li:hover {
+  background-color: #162D40;
 }
 
 section.profile-details > div.wrapper > ul > li.active::after{
@@ -214,19 +242,30 @@ section.profile-details > div.wrapper > ul > li.active::after{
   background-color: #1da1f2;
 }
 
-section.profile-details > div.wrapper > ul > li > strong {
+section.profile-details > div.wrapper > ul > li > a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 0 15px;
+
+  text-decoration: none;
+}
+
+section.profile-details > div.wrapper > ul > li > a > strong {
   font-size: 12px;
   color: #8899A6;
 }
 
-section.profile-details > div.wrapper > ul > li > p {
+section.profile-details > div.wrapper > ul > li > a > p {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
   margin-top: 2px;
 }
 
-section.profile-details > div.wrapper > ul > li.active > p {
+section.profile-details > div.wrapper > ul > li.active > a > p {
   color: #1da1f2;
 }
 
@@ -247,18 +286,24 @@ section.profile-details > div.wrapper > div > button {
     
   font-size: 15px;
   font-weight: bold;
-  color: #fff;
+  color: #1da1f2;
   
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section.main-content {
-
-  margin-bottom: 100px;
-  /* remove */
+section.profile-details > div.wrapper > div > a {
+  display: flex;
 }
+
+section.profile-details > div.wrapper > div > button:hover {
+  background-color: #162D40;
+}
+
+/* section.main-content {
+  margin-bottom: 100px;
+} */
 
 section.main-content {
   display: flex;
@@ -274,12 +319,19 @@ section.main-content > aside.profile {
   margin-right: 25px;
 }
 
-section.main-content > aside.profile > img.avatar {
+section.main-content > aside.profile > a {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: -178px;
+  position: relative;
+  z-index: 2;
+}
+section.main-content > aside.profile > a > img.avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 5px solid #fff;
-  margin-top: -178px;
 }
 
 section.main-content > aside.profile > header > h1 {
@@ -334,7 +386,7 @@ section.main-content > aside.profile > div.widget > strong > img {
   margin-right: 5px;
 }
 
-section.main-content > aside.profile > div.followers > ul {
+section.main-content > aside.profile > div.followers > nav {
   /* width: 260px; */
   
   display: flex;
@@ -342,7 +394,7 @@ section.main-content > aside.profile > div.followers > ul {
   list-style: none;
 }
 
-section.main-content aside.profile > div.followers > ul > li {
+section.main-content > aside.profile > div.followers > nav > a {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -352,11 +404,11 @@ section.main-content aside.profile > div.followers > ul > li {
   margin-top: 5px;
 }
 
-section.main-content > aside.profile > div.followers > ul > li:not(:nth-child(5n)) {
+section.main-content > aside.profile > div.followers > nav > a:not(:nth-child(5n)) {
   margin-right: 5px;
 }
 
-section.main-content aside.profile > div.followers > ul > li > img {
+section.main-content aside.profile > div.followers > nav > a > img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -364,7 +416,7 @@ section.main-content aside.profile > div.followers > ul > li > img {
   flex-shrink: 0;
 }
 
-section.main-content > aside.profile > div.media > ul {
+section.main-content > aside.profile > div.media > nav {
   /* width: 260px; */
 
   display: flex;
@@ -372,7 +424,7 @@ section.main-content > aside.profile > div.media > ul {
   list-style: none;
 }
 
-section.main-content > aside.profile > div.media > ul > li {
+section.main-content > aside.profile > div.media > nav > a {
   width: 83px;
   height: 83px;
   background-color: #d0d5d9;
@@ -382,7 +434,7 @@ section.main-content > aside.profile > div.media > ul > li {
   margin-top: 5px;
 }
 
-section.main-content > aside.profile > div.media > ul > li > img {
+section.main-content > aside.profile > div.media > nav > a > img {
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -390,13 +442,217 @@ section.main-content > aside.profile > div.media > ul > li > img {
   flex-shrink: 0;
 }
 
-section.main-content > aside.profile > div.media > ul > li:not(:nth-child(3n)) {
+section.main-content > aside.profile > div.media > nav > a:not(:nth-child(3n)) {
   margin-right: 5px;
 }
 
 section.main-content > article.timeline {
-  width: 590px;
+  /* width: 590px; */  
   border: 1px solid #38444d;
+}
+
+section.main-content > article.timeline > nav {
+  height: 52px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #38444d;
+}
+
+section.main-content > article.timeline > nav > a{
+  width: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+  font-weight: bold;
+  color: #8899a6;
+  text-decoration: none;
+
+  padding: 15px;
+}
+
+section.main-content > article.timeline > nav > a:nth-child(2){
+  width: 40%;
+}
+
+section.main-content > article.timeline > nav > a:hover{
+  background-color: #162D40;
+}
+
+section.main-content > article.timeline > nav > a.active{
+  color: #1da1f2;
+  position: relative;
+}
+
+section.main-content > article.timeline > nav > a.active::after{
+  content: '';
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #1da1f2;
+  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+section.main-content > article.timeline > ul {
+  list-style: none;
+}
+
+section.main-content > article.timeline > ul > li {
+  border-bottom: 1px solid #38444d;
+}
+
+section.main-content > article.timeline > ul > li > a {
+  padding: 0 15px;
+  
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+}
+
+section.main-content > article.timeline > ul > li > a:hover {
+  background-color: #192734;
+}
+
+section.main-content > article.timeline > ul > li > a > div.retweet {
+  height: 31px;
+  padding: 10px 0 0;
+  
+  display: flex;
+}
+
+section.main-content > article.timeline > ul > li > a > div.retweet > div {
+  width: 49px;
+  height: 19px;
+  margin-right: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.retweet > div > img {
+  display: flex;
+  margin-left: auto;
+}
+
+section.main-content > article.timeline > ul > li > a > div.retweet > span {
+  font-size: 13px;
+  color: #8899a6;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet {
+  display: flex;
+
+  margin-top: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.avatar {
+  margin-right: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.avatar > img {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content {
+  width: 509px;
+
+  padding: 0 0 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > header > strong {
+  font-size: 15px;
+  color: #fff;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > header > span {
+  font-size: 15px;
+  color: #8899a6;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content >  p {
+  font-size: 15px;
+  color: #fff;
+
+  margin-top: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images {
+  width: 509px;
+  height: 297px;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images > img {
+  width: 250px;
+  height: 285px;
+  
+  padding: 2px;
+
+  border: 1px solid #38444d;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images > img:first-of-type {
+  border-radius: 20px 0 0 20px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images > img:last-of-type {
+  border-radius: 0 20px 20px 0;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images > img:only-of-type {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav {
+  height: 19px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 10px;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div {
+  width: 25%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div:hover {
+
+  background-color: #193348;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div > p {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  color: #8899a6;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div > p > img {
+  margin-right: 11.5px;
 }
 
 section.main-content > aside.widgets {
@@ -485,11 +741,15 @@ section.main-content > aside.widgets > div.widget > ul > li > a > button {
   align-items: center;
 }
 
-section.main-content > aside.widgets > div.trends > ul > li {
+section.main-content > aside.widgets > div.widget > ul > li > a > button:hover {
+  background-color: #20394D;
+}
+
+section.main-content > aside.widgets > div.trends > ul > li > a {
   display: flex;
   flex-direction: column;
 }
-section.main-content > aside.widgets > div.trends > ul > li > strong {
+section.main-content > aside.widgets > div.trends > ul > li > a > strong {
   margin-top: 5px;
 }
 
@@ -505,6 +765,15 @@ section.main-content > aside.widgets > footer > nav {
 }
 
 section.main-content > aside.widgets > footer > nav > a {
+  font-size: 13px;
+  color: #8899a6;
+
+  padding-right: 10px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+section.main-content > aside.widgets > footer > nav > p {
   font-size: 13px;
   color: #8899a6;
   padding-right: 10px;
