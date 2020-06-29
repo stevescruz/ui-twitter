@@ -1,9 +1,7 @@
 section.main-content > aside.profile {
   width: 265px;
-  /* height: 639px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   margin-right: 20px;
 }
 

@@ -1,72 +1,85 @@
 section.main-content > aside.widgets {
   width: 397px;
   margin-left: 20px;
+
 }
 
-section.main-content > aside.widgets > div {
+/* section.main-content > aside.widgets .fixed-wrapper {
+  position: relative;
+}
+
+section.main-content > aside.widgets .fixed {
+  position: fixed;
+} */
+
+section.main-content > aside.widgets > div > div {
   width: 348px;
   background-color: #192734;
   border-radius: 15px;
   margin-bottom: 20px;
 }
 
-section.main-content > aside.widgets > div.widget h1 {
+section.main-content > aside.widgets > div.widget > div h1 {
   font-size: 19px;
   color: #fff;
 }
 
-section.main-content > aside.widgets > div.widget strong {
+section.main-content > aside.widgets > div.widget > div strong {
   font-size: 15px;
   color: #fff;
 }
 
-section.main-content > aside.widgets > div.widget span
+section.main-content > aside.widgets > div.widget > div span
  {
   font-size: 15px;
   color: #8899a6;
 }
 
-section.main-content > aside.widgets > div.widget > div {
+section.main-content > aside.widgets > div.widget > div > div {
   padding: 10px 15px;
 }
 
-section.main-content > aside.widgets > div.widget > ul {
+section.main-content > aside.widgets > div.widget > div > ul {
   list-style: none;
 }
 
-section.main-content > aside.widgets > div.widget > ul > li {
+section.main-content > aside.widgets > div.widget > div > ul > li {
   padding: 10px 15px;
   border-top: 1px solid #38444d;
 }
 
-section.main-content > aside.widgets > div.widget > ul > li:hover {
+section.main-content > aside.widgets > div.widget > div > ul > li:hover {
   background: #202E3A;
 }
 
-section.main-content > aside.widgets > div.widget > ul > li:last-child {
+section.main-content > aside.widgets > div.widget > div > ul > li:last-child {
   padding: 15px;
   border-radius: 0 0 15px 15px;
 }
 
-section.main-content > aside.widgets > div.widget > ul > li > a {
+section.main-content > aside.widgets > div.widget > div > ul > li > a {
   display: flex;
   text-decoration: none;
 }
 
-section.main-content > aside.widgets > div.widget > ul > li > a > img {
+section.main-content > aside.widgets > div.widget > div > ul > li > a > img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   background-color: #d0d5d9;
   margin-right: 7px;
+
+  display: flex;
+  align-self: center;
 }
 
-section.main-content > aside.widgets > div.widget > ul > li > a > div {
+section.main-content > aside.widgets > div.widget > div > ul > li > a > div {
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 
-section.main-content > aside.widgets > div.widget > ul > li > a > button {
+section.main-content > aside.widgets > div.widget > div > ul > li > a > button {
   margin-left: auto;
   width: 79px;
   height: 30px;
@@ -80,34 +93,35 @@ section.main-content > aside.widgets > div.widget > ul > li > a > button {
   color: #1da1f2;
   
   display: flex;
+  align-self: center;
   justify-content: center;
   align-items: center;
 }
 
-section.main-content > aside.widgets > div.widget > ul > li > a > button:hover {
+section.main-content > aside.widgets > div.widget > div > ul > li > a > button:hover {
   background-color: #20394D;
 }
 
-section.main-content > aside.widgets > div.trends > ul > li > a {
+section.main-content > aside.widgets > div.trends > div > ul > li > a {
   display: flex;
   flex-direction: column;
 }
-section.main-content > aside.widgets > div.trends > ul > li > a > strong {
+section.main-content > aside.widgets > div.trends > div > ul > li > a > strong {
   margin-top: 5px;
 }
 
-section.main-content > aside.widgets > footer {
+section.main-content > aside.widgets > footer > div {
   width: 350px;
   padding: 0 15px;
 }
 
-section.main-content > aside.widgets > footer > nav {
+section.main-content > aside.widgets > footer > div > nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-section.main-content > aside.widgets > footer > nav > a {
+section.main-content > aside.widgets > footer > div > nav > a {
   font-size: 13px;
   color: #8899a6;
 
@@ -116,7 +130,7 @@ section.main-content > aside.widgets > footer > nav > a {
   margin-right: 2px;
 }
 
-section.main-content > aside.widgets > footer > nav > p {
+section.main-content > aside.widgets > footer > div > nav > p {
   font-size: 13px;
   color: #8899a6;
   padding-right: 10px;
