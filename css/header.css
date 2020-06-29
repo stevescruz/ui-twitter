@@ -12,11 +12,6 @@ header#main-header > div.wrapper {
   align-items: center;
 }
 
-header#main-header > div.wrapper > nav  {
-  width: 315px;
-  margin-top: 3px;
-}
-
 header#main-header > div.wrapper > nav > ul {
   display: flex;
   justify-content: space-between;
@@ -31,17 +26,19 @@ header#main-header > div.wrapper > nav > ul > li {
 }
 
 header#main-header > div.wrapper > nav > ul > li:nth-child(2) {
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 header#main-header > div.wrapper > nav > ul > li:nth-child(3) {
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 header#main-header > div.wrapper > nav > ul > li > a {
   display: flex;
   align-items: center;
   
+  padding: 15px;
+
   text-decoration: none;
 }
 
@@ -69,11 +66,11 @@ header#main-header > div.wrapper > section.main-header-right-side {
   align-items: center;
 }
 
-header#main-header > div.wrapper > section.main-header-right-side > div.searchBar {
+/* header#main-header > div.wrapper > section.main-header-right-side > div.searchBar {
   display: flex;
-}
+} */
 
-header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > div {
+/* header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > div {
   width: 40px;
   height: 40px;
   display: flex;
@@ -81,35 +78,38 @@ header#main-header > div.wrapper > section.main-header-right-side > div.searchBa
   align-items: center;
   background-color: #253341;
   border-radius: 20px 0 0 20px;
-}
+} */
 
-header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > div > img {
+/* header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > div > img {
   width: 40px;
   height: 18.75px;
   padding-left: 10px;
-}
+} */
 
-header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > input {
+header#main-header > div.wrapper > section.main-header-right-side > input {
   width: 483.25px;
   height: 40px;
   display:flex;
   align-content: center;
   border-style: none;
-  border-radius: 0 20px 20px 0;
-  background-color: #253341;
+  border-radius: 20px;
+  /* background-color: #253341; */
+  background: #253341 url("/images/search.svg") no-repeat left 10px;
   font-family: Arial;
   font-size: 13px;
   color: #fff;
-  padding: 10px;
+  padding: 10px 10px 10px 50px;
 }
 
 /* input:active {
   background-color: #15202B;
+  
+  images/search.svg
 } */
 
-header#main-header > div.wrapper > section.main-header-right-side > div.searchBar > input::placeholder {
+header#main-header > div.wrapper > section.main-header-right-side > input::placeholder {
   font-size: 15px;
-  color: #fff;
+  color: #8899a6;
 }
 
 header#main-header > div.wrapper > section.main-header-right-side > a {

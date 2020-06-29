@@ -169,30 +169,25 @@ section.main-content > article.timeline > ul > li > a > div.tweet > div.content 
   border-radius: 20px;
 }
 
-section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav {
-  height: 19px;
-
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul {
   display: flex;
   justify-content: space-between;
-
-  margin-top: 10px;
 }
 
-section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div {
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li {
   width: 25%;
-  height: 100%;
   
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div:hover {
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li:hover {
 
   background-color: #193348;
 }
 
-section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div > p {
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li > p {
   
   display: flex;
   justify-content: center;
@@ -200,8 +195,10 @@ section.main-content > article.timeline > ul > li > a > div.tweet > div.content 
 
   font-size: 13px;
   color: #8899a6;
+
+  padding: 10px;
 }
 
-section.main-content > article.timeline > ul > li > a > div.tweet > div.content > nav > div > p > img {
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li > p > img {
   margin-right: 11.5px;
 }
