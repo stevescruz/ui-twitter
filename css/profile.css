@@ -55,14 +55,21 @@ section.main-content > aside.profile > ul > li > img {
   margin-right: 5px;
 }
 
-section.main-content > aside.profile > div.widget {
+section.main-content > aside.profile > div.left-sidebar {
+  position: -webkit-sticky; /* Safari Browser compatability*/
+  position: sticky;
+  top: 55px;
+  align-self: flex-start; /* https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox */
+}
+
+section.main-content > aside.profile > div.left-sidebar > div.widget {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 30px;
 }
 
-section.main-content > aside.profile > div.widget > strong {
+section.main-content > aside.profile > div.left-sidebar > div.widget > strong {
   font-weight: normal;
   font-size: 15px;
   color: #1da1f2;
@@ -71,17 +78,17 @@ section.main-content > aside.profile > div.widget > strong {
   margin-bottom: 5px;
 }
 
-section.main-content > aside.profile > div.widget > strong > img {
+section.main-content > aside.profile > div.left-sidebar > div.widget > strong > img {
   margin-right: 5px;
 }
 
-section.main-content > aside.profile > div.followers > nav {
+section.main-content > aside.profile > div.left-sidebar > div.followers > nav {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-section.main-content > aside.profile > div.followers > nav > a {
+section.main-content > aside.profile > div.left-sidebar > div.followers > nav > a {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -91,19 +98,19 @@ section.main-content > aside.profile > div.followers > nav > a {
 
 }
 
-section.main-content aside.profile > div.followers > nav > a > img {
+section.main-content aside.profile > div.left-sidebar > div.followers > nav > a > img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
 
-section.main-content > aside.profile > div.media > nav {
+section.main-content > aside.profile > div.left-sidebar > div.media > nav {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-section.main-content > aside.profile > div.media > nav > a {
+section.main-content > aside.profile > div.left-sidebar > div.media > nav > a {
   width: 83px;
   height: 83px;
   background-color: #d0d5d9;
@@ -112,7 +119,7 @@ section.main-content > aside.profile > div.media > nav > a {
   margin-right: 5px;
 }
 
-section.main-content > aside.profile > div.media > nav > a > img {
+section.main-content > aside.profile > div.left-sidebar > div.media > nav > a > img {
   width: 83px;
   height: 83px;
   border-radius: 4px;

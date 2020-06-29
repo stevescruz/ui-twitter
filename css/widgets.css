@@ -2,10 +2,10 @@ section.main-content > aside.widgets {
   width: 397px;
   margin-left: 20px;
   
-  position: -webkit-sticky;
+  position: -webkit-sticky; /* Safari Browser compatability*/
   position: sticky;
   top: 55px;
-  align-self: flex-start; /*https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox*/
+  align-self: flex-start; /* https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox */
 }
 
 section.main-content > aside.widgets > div {
