@@ -137,10 +137,8 @@ section.main-content > article.timeline > ul > li > a > div.tweet > div.content 
 }
 
 section.main-content > article.timeline > ul > li > a > div.tweet > div.content > div.content-images {
-  width: 509px;
-  height: 297px;
-
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   margin-top: 10px;
@@ -177,14 +175,28 @@ section.main-content > article.timeline > ul > li > a > div.tweet > div.content 
 section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li {
   width: 25%;
   
+  font-size: 13px;
+  color: #8899a6;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li:hover {
-
   background-color: #193348;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li:nth-child(1):hover {
+  color: #1C7EBD;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li:nth-child(2):hover {
+  color: #17A65B;
+}
+
+section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li:nth-child(3):hover {
+  color: #E0245E;
 }
 
 section.main-content > article.timeline > ul > li > a > div.tweet > div.content > ul > li > p {
@@ -192,9 +204,6 @@ section.main-content > article.timeline > ul > li > a > div.tweet > div.content 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: 13px;
-  color: #8899a6;
 
   padding: 10px;
 }
