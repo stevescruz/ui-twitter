@@ -41,7 +41,7 @@ header#main-header > div.wrapper > nav > ul > li > a {
   display: flex;
   align-items: center;
   
-  padding: 15px;
+  padding: 10px;
 
   text-decoration: none;
 }

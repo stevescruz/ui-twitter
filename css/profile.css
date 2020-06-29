@@ -75,7 +75,7 @@ section.main-content > aside.profile > div.left-sidebar > div.widget > strong {
   color: #1da1f2;
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 section.main-content > aside.profile > div.left-sidebar > div.widget > strong > img {
@@ -93,7 +93,7 @@ section.main-content > aside.profile > div.left-sidebar > div.followers > nav > 
   height: 48px;
   border-radius: 50%;
   background-color: #d0d5d9;
-  margin-top: 5px;
+  margin-top: 7px;
   margin-right: 5px;
 
 }
@@ -115,7 +115,7 @@ section.main-content > aside.profile > div.left-sidebar > div.media > nav > a {
   height: 83px;
   background-color: #d0d5d9;
   border-radius: 4px;
-  margin-top: 5px;
+  margin-top: 8px;
   margin-right: 5px;
 }
 

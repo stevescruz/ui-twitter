@@ -80,7 +80,7 @@ section.main-content > aside.widgets > div.widget > ul > li > a > button {
   width: 79px;
   height: 30px;
 
-  background-color: #15202B;
+  background-color: inherit;
   border: 1px solid #1da1f2;
   border-radius: 16px;
     
