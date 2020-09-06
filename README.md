@@ -14,7 +14,7 @@
   <a href="#memo-license">License</a>
 </p>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: flex-end;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
 
   <img style="margin: 5px" alt="API Endpoint Request" src="https://media3.giphy.com/media/PjIP8SKqOaappWtKOi/giphy.gif" width="295" />
 
@@ -27,11 +27,12 @@
 
 ## Why?
 
-Sometimes it's nice to build things using pure CSS in order to appreciate the functionalities provided by frameworks and pre-processors such as React, Angular, Vue, Bootstrap, and SASS. I personally use React's Styled components a lot, so it's easy to take it for granted.
+Sometimes it is nice to build things using pure CSS in order to appreciate the functionalities provided by frameworks and pre-processors such as React, Angular, Vue, Bootstrap, and SASS. I personally use React's Styled components a lot, so it 
+is easy to take it for granted.
 
 My goal was to redesign the Twitter UI while implementing as many visual features as possible without using JavaScript, purely utilizing HTML and CSS.
 
-As a bonus, i got to learn how to implement a sticky sidebar without using JavaScript => Spoiler: it was done by using `position: sticky`.
+As a bonus, I got to learn how to implement a sticky sidebar without using JavaScript => Spoiler: it was done by using `position: sticky`.
 
 ## Technologies
 
@@ -46,17 +47,17 @@ This project was developed with the following technologies:
 
 To access the deployed website [click here](https://stevescruz.github.io/twitter-ui/).
 
-To clone and run this application on your own machine, you'll need [Git](https://git-scm.com) installed on your computer. From your command line:
+To clone and run this application on your own machine, you will need [Git](https://git-scm.com) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/stevescruz/explore_github.git
+$ git clone https://github.com/stevescruz/twitter-ui.git
 
 # Go into the repository
-$ cd twitter_ui
+$ cd twitter-ui
 
 # Run the app
-Open index.html with your web browser
+Run index.html with your web browser
 ```
 
 ## :memo: License
