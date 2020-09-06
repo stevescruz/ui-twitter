@@ -27,8 +27,8 @@
 
 ## Why?
 
-Sometimes it is nice to build things using pure CSS in order to appreciate the functionalities provided by frameworks and pre-processors such as React, Angular, Vue, Bootstrap, and SASS. I personally use React's Styled components a lot, so it 
-is easy to take it for granted.
+It is nice to build things with vanilla CSS and JavaScript to better appreciate functionalities provided by frameworks, libraries and preprocessors such as ReactJS, Angular, Vue.js, Bootstrap, Tailwind and SASS. I personally use React's 
+styled-components library a lot, so it is easy to take some things for granted.
 
 My goal was to redesign the Twitter UI while implementing as many visual features as possible without using JavaScript, purely utilizing HTML and CSS.
 
